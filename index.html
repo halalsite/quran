@@ -9,7 +9,12 @@
         <link rel="icon" type="image/png" href="quran.jpg">
     </head>
     <body>
-        <iframe src="quran.mp3" style="display: none;"></iframe>
+        <audio id="my_audio" src="quran.mp3"></audio>
+        <script>
+            window.onload = function() {
+                document.getElementById("my_audio").play();
+            }
+        </script>
         <div class="blog-slider">
             <h1 style="text-align: center;">Surahs</h1>
             <div class="blog-slide">
