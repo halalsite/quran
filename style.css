@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background-image 1s ease;
+    backdrop-filter: blur(5px);
+}
+
+
+#quote-container {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    background: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 10px;
+    background-image: url(back.jpg);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#arabic{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+#quote {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+#author {
+    text-align:   end;
+    font-style: italic;
+}
+
+.blog-slider {
+    overflow-y: auto;
+    max-height: 80vh;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-slide {
+    margin-bottom: 20px;
+}
+
+.blog-slide a {
+    text-decoration: none;
+    width: 420px;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+    position: relative;
+}
+.blog-slide a .hide {
+    display: none;
+    position: absolute;
+    top: -100%; /* Position the tooltip at the bottom */
+    left: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+}
+.blog-slide a:hover  {
+    background-color: #5cd170;
+}
+.blog-slide a:hover .hide {
+    display: block;
+}
+ 
+  ul.a {
+    list-style-type: circle;
+  }
+  .surahNumber{
+    background-color: var(--color-background-alternative-faint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(2.5*var(--spacing-medium));
+    height: calc(2.5*var(--spacing-medium));
+    border-radius: var(--border-radius-default);
+    margin-inline-end:var(--spacing-large)}
+
+.surahNumber>span {
+    font-weight: var(--font-weight-bold)
+}
